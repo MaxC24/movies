@@ -87,6 +87,8 @@ body {
 }
 
 .modal-poster {
+	height: 40vw;
+	width: 25vw;
 	border-radius: 2%;
 	float: left;
 	margin: 5%;
