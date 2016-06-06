@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>movies</title>
+	<title>moviessss</title>
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 	<script src="node_modules/jquery/dist/jquery.min.js"></script>
@@ -13,7 +13,7 @@
 </head>
 <body>
 	<div ng-app="newMovies">
-		<div id="navbar"><h1>Movies</h1></div>
+		<div id="navbar"><span id="title">MOVIES</span></div>
 		<div id="main-view" ng-controller="moviesListCtrl">
 			<div ng-repeat="movie in movies.results"><img  class="movie-poster" ng-src="{{ movie.poster_path }}"/></div>
 			<div id="paginator">

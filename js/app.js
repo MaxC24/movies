@@ -5,7 +5,6 @@ var app = angular.module('newMovies', ['ui.bootstrap'])
 	MoviesFactory.getNowPlayingMovies()
 	.then(function(movies) {
 		$scope.movies = MoviesFactory.fixPosterPath(movies);
-		console.log(movies);
 	})
 	.catch($log);
 
