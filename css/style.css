@@ -29,7 +29,20 @@ body {
 	overflow: auto;
 }
 #title {
+	position: relative;
+	top: 25%;
 	font-size: 2vw;
 	height: 3%;
-	padding: 3%;
+	padding-left: 2.5vw;
+}
+
+#latest-releases {
+	text-align: left;
+	font-size: 2vw;
+	color: #888888;
+	margin: .5vw;
+}
+
+.tooltip {
+	font-size: 1.5vw;
 }
