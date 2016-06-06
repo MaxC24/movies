@@ -75,15 +75,32 @@ body {
 	}
 }
 
+.modal-container {
+	overflow: auto;
+	width: 100%;
+	border-radius: .5%;
+}
+
+.modal-color-background {
+	overflow: auto;
+	background-color: rgba(0,0,0,.3);
+}
+
+.modal-poster {
+	border-radius: 2%;
+	float: left;
+	margin: 5%;
+}
 .modal-title {
+	margin-top: 20%;
+	float: left;
+	width: 50%;
 	color: white;
 	font-size: 1.5em;
 }
 
 .modal-paragraph {
+	float: left;
 	color: white;
-}
-
-.modal-container {
-	width: 100%;
+	width:40%;
 }

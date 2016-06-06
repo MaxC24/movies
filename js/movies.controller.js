@@ -21,6 +21,7 @@ app.controller('moviesListCtrl', function($scope, MoviesFactory, $log, $uibModal
 		var movieModalInstance = $uibModal.open({
 			templateUrl: "modal.template.html",
 			controller: 'modalCtrl',
+			size: 'lg',
 			resolve: {
 				movie: function() {
 					return movie;
