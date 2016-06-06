@@ -13,16 +13,16 @@
 </head>
 <body>
 	<div ng-app="newMovies">
-		<div id="navbar"><span id="title">MOVIES</span></div>
+		<div id="navbar"><span id="title">Movies</span></div>
 		<div id="main-view" ng-controller="moviesListCtrl">
 			<div id="latest-releases">Latest Releases</div>
 			<div ng-repeat="movie in movies.results">
-			<img 
-				tooltip-class="tooltip"
-				uib-tooltip="{{movie.title}}"  
-				tooltip-placement="center" 
-				class="movie-poster" 
-				ng-src="{{ movie.poster_path }}"/>
+				<img 
+					tooltip-class="tooltip"
+					uib-tooltip="{{movie.title}}"  
+					tooltip-placement="center" 
+					class="movie-poster" 
+					ng-src="{{ movie.poster_path }}"/>
 			</div>
 			<div id="paginator">
 				<uib-pagination
