@@ -58,22 +58,6 @@ body {
 	outline: none;
 }
 
-@media only screen and (max-width:900px) {
-	.movie-poster {
-		height: 66vw;
-		width: 45vw;
-	}
-	#navbar {
-		height: 3em;
-	}
-	.title {
-		top:20%;
-		font-size: 1.5em;
-	}
-	#latest-releases {
-		font-size: 1em;
-	}
-}
 
 .modal-container {
 	overflow: auto;
@@ -83,11 +67,11 @@ body {
 
 .modal-color-background {
 	overflow: auto;
-	background-color: rgba(0,0,0,.3);
+	background-color: rgba(0,0,0,.7);
 }
 
 .modal-poster {
-	height: 40vw;
+	height: 38vw;
 	width: 25vw;
 	border-radius: 2%;
 	float: left;
@@ -106,3 +90,59 @@ body {
 	color: white;
 	width:40%;
 }
+
+.modal-button {
+  background:none;
+  border:none;
+  font-size:1em;
+  padding: 0px;
+  margin: 3vw 7vw 0vw 3vw;
+  color: #999999;
+}
+
+.modal-button:focus {
+	outline: none;
+	color: white;
+}
+
+.modal-button:hover {
+	outline: none;
+	color: white;
+}
+
+.modal-buttons-container {
+	width: 100%;
+}
+
+
+@media only screen and (max-width:900px) {
+	.movie-poster {
+		height: 66vw;
+		width: 45vw;
+	}
+	#navbar {
+		height: 3em;
+	}
+	.title {
+		top:20%;
+		font-size: 1.5em;
+	}
+	#latest-releases {
+		font-size: 1em;
+	}
+
+	.modal-poster {
+		height: 115vw;
+		width: 80vw;
+	}
+
+	.modal-paragraph {
+		width: 80%;
+	}
+
+	.modal-title {
+		width: 80%;
+	}
+}
+
+

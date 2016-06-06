@@ -10,10 +10,10 @@ router.get('/movies/:page', function(req, res, next){
 		var body = '';
 		response.on('data', function(chunk){
 			body += chunk;
-		})
+		});
 		response.on('end', function(){
 			res.send(body);
-		})
+		});
 	});
 });
 
