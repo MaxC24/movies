@@ -1,0 +1,35 @@
+body {
+	background-color: #f1f3f4;
+}
+
+.movie-poster {
+	float: left;
+	margin: .5vw;
+	height: 18vw;
+	width: 12vw;
+	border-radius: 3%;
+	box-shadow: 1px 1px 5px #999999;
+}
+
+#main-view {
+	text-align: center;
+	padding: 0% 2%;
+}
+
+#paginator {
+	overflow: auto;
+	text-align: center;
+	width: 100%;
+}
+
+#navbar {
+	background-color: #474e5a;
+	color: white;
+	height: 5vw;
+	overflow: auto;
+}
+#title {
+	font-size: 2vw;
+	height: 3%;
+	padding: 3%;
+}
