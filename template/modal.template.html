@@ -1,0 +1,7 @@
+<div class="modal-container">
+	<div class="background-poster" ng-style="{'background-image': 'url(' + movie.poster_path + ')', 'background-size': '150%'}">
+		<img class="modal-poster" ng-src="{{ movie.poster_path }}"/>
+		<div class="modal-title">{{ movie.title }}</div>
+		<p class="modal-paragraph">{{ movie.overview }}</p>
+	</div>
+</div>
