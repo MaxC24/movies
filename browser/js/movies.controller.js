@@ -1,7 +1,7 @@
 
 
 app.controller('moviesListCtrl', function($scope, MoviesFactory, $log, $uibModal){
-
+	
 	MoviesFactory.getNowPlayingMovies()
 	.then(function(movies) {
 		$scope.movies = MoviesFactory.fixPosterPath(movies);
@@ -19,7 +19,7 @@ app.controller('moviesListCtrl', function($scope, MoviesFactory, $log, $uibModal
 
 	$scope.openMovieModal = function(movie){
 		var movieModalInstance = $uibModal.open({
-			templateUrl: "modal.template.html",
+			templateUrl: "template/modal.template.html",
 			controller: 'modalCtrl',
 			size: 'lg',
 			resolve: {

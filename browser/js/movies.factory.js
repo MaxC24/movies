@@ -1,7 +1,7 @@
 
 
 app.factory('MoviesFactory', function($http){
-	var theBestMoviePoster = "http://i.kinja-img.com/gawker-media/image/upload/s---zKMfGT0--/c_scale,fl_progressive,q_80,w_800/19fk32sw3nt1wjpg.jpg";
+	var theBestMoviePoster = "http://posterwire.com/wp-content/uploads/empire_strikes_back_style_a.jpg";
 	return {
 		getNowPlayingMovies: function(page) { 
 			page = page || 1;
@@ -15,7 +15,6 @@ app.factory('MoviesFactory', function($http){
 			movies.results.forEach(function(movie){
 				if(!movie.poster_path) movie.poster_path = theBestMoviePoster;
 				else movie.poster_path = posterPath + movie.poster_path;
-				movie.backdrop_path = posterPath + movie.backdrop_path;
 			});
 			return movies;
 		}
