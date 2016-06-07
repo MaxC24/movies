@@ -2,20 +2,31 @@
 <html>
 <head>
 	<title>moviessss</title>
-	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
+	<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
-	<script src="node_modules/jquery/dist/jquery.min.js"></script>
-	<script src="node_modules/angular/angular.js"></script>
-	<script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
-	<script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
-	<script rel="stylesheet" href="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css"></script>
+	<script src="jquery/dist/jquery.min.js"></script>
+	<script src="angular/angular.js"></script>
+	<script src="angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+	<script src="angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+	<script rel="stylesheet" href="angular-ui-bootstrap/dist/ui-bootstrap-csp.css"></script>
 	<script src="js/app.js"></script>
+	<script src="js/movies.controller.js"></script>
+	<script src="js/movies.factory.js"></script>
+	<script src="js/modal.controller.js"></script>
 </head>
 <body>
 	<div ng-app="newMovies">
-		<div id="navbar"><span id="title">MOVIES</span></div>
+		<div id="navbar"><span class="title">Movies</span></div>
 		<div id="main-view" ng-controller="moviesListCtrl">
-			<div ng-repeat="movie in movies.results"><img  class="movie-poster" ng-src="{{ movie.poster_path }}"/></div>
+			<div id="latest-releases">Latest Releases</div>
+			<button class="movie-button" ng-repeat="movie in movies.results" ng-click="openMovieModal(movie)">
+				<img 
+					tooltip-class="tooltip"
+					uib-tooltip="{{movie.title}}"  
+					tooltip-placement="center" 
+					class="movie-poster" 
+					ng-src="{{ movie.poster_path }}"/>
+			</button>
 			<div id="paginator">
 				<uib-pagination
 					total-items="movies.total_results" 
