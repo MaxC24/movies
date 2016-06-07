@@ -1,6 +1,6 @@
 app.controller('modalCtrl', function($scope, movie, movies, $uibModalInstance){
 	$scope.movie = movie;
-
+	
 	$scope.closeModal = function(){
 		$uibModalInstance.close();
 	};

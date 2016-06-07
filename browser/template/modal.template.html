@@ -2,11 +2,14 @@
 	<div class="background-poster" ng-style="{'background-image': 'url(' + movie.poster_path + ')', 'background-size': '150%'}">
 		<div class="modal-color-background">
 			<div class="modal-buttons-container">
-				<button class="modal-button left" ng-click="closeModal()"><span class="glyphicon glyphicon-chevron-left"></span>Back to the list</button>
-				<button class="modal-button right" ng-click="toNextMovie()">Next movies<span class="glyphicon glyphicon-chevron-right"></span></button>
+				<button class="modal-button modal-button-left" ng-click="closeModal()"><span class="glyphicon glyphicon-chevron-left"></span>Back to list</button>
+				<button class="modal-button modal-button-right" ng-click="toNextMovie()">Next movies<span class="glyphicon glyphicon-chevron-right"></span></button>
 			</div>
 			<img class="modal-poster" ng-src="{{ movie.poster_path }}"/>
 			<div class="modal-title">{{ movie.title }}</div>
+			<hr class="modal-line" width="40%">
+			<div class="modal-info">Score: <b>{{movie.vote_average}}</b> <span class="modal-separator">|</span> Release Date: <b>{{movie.release_date}}</b></div>
+			<hr class="modal-line" width="40%">
 			<p class="modal-paragraph">{{ movie.overview }}</p>
 		</div>
 	</div>
