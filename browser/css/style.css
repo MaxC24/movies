@@ -1,5 +1,6 @@
 body {
 	background-color: #f1f3f4;
+	font-family: "Open Sans", sans-serif;
 }
 
 #navbar {
@@ -78,11 +79,18 @@ body {
 	margin: 5%;
 }
 .modal-title {
-	margin-top: 20%;
+	margin-top: 10%;
 	float: left;
 	width: 50%;
 	color: white;
 	font-size: 1.5em;
+}
+
+.modal-info {
+	font-size: 1em; 
+	float: left;
+	color: white;
+	margin: 1% 0%;
 }
 
 .modal-paragraph {
@@ -96,8 +104,16 @@ body {
   border:none;
   font-size:1em;
   padding: 0px;
-  margin: 3vw 7vw 0vw 3vw;
+  margin: 3vw 1.5vw 0vw 1.5vw ;
   color: #999999;
+}
+
+.modal-button-right {
+	float: right;
+}
+
+.modal-button-left {
+	float: left;
 }
 
 .modal-button:focus {
@@ -111,9 +127,20 @@ body {
 }
 
 .modal-buttons-container {
+	overflow: auto;
 	width: 100%;
 }
 
+.modal-line {
+	float: left;
+	opacity: .2;
+	margin: 1vw 0vw;
+}
+
+.modal-separator {
+	opacity: .3;
+	margin: 0vw 1vw 0vw 1vw;
+}
 
 @media only screen and (max-width:900px) {
 
@@ -136,8 +163,8 @@ body {
 	}
 
 	.modal-poster {
-		height: 115vw;
-		width: 80vw;
+		height: 60vw;
+		width: 40vw;
 	}
 
 	.modal-paragraph {
@@ -149,6 +176,14 @@ body {
 		width: 80%;
 		margin-top: 2%;
 		margin-left: 3vw;
+	}
+
+	.modal-line {
+		display: none;
+	}
+
+	.modal-info {
+		margin: 1vw 0vw 1vw 3vw;
 	}
 }
 
