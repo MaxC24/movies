@@ -4,7 +4,7 @@
 var express = require('express');
 var app = express();
 var path = require('path');
-var port = 1337;
+var port = Number(process.env.PORT || 3000);
 var morgan = require('morgan');
 
 app.use(express.static(path.join(__dirname, 'browser')));
