@@ -4,8 +4,8 @@
 var express = require('express');
 var app = express();
 var path = require('path');
-var port = Number(process.env.PORT || 3000);
 var morgan = require('morgan');
+var port = Number(process.env.PORT || 3000);
 
 app.use(express.static(path.join(__dirname, 'browser')));
 app.use(express.static(path.join(__dirname, 'node_modules')));
