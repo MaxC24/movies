@@ -6,16 +6,15 @@ body {
 #navbar {
 	background-color: #474e5a;
 	color: white;
-	height: 5vw;
 	overflow: auto;
 }
 
 .title {
 	position: relative;
-	top: 25%;
-	font-size: 2vw;
+	font-size: 4vw;
 	height: 3%;
 	padding-left: 2.5vw;
+	font-weight: bold;
 }
 
 #main-view {
@@ -36,7 +35,7 @@ body {
 	text-align: left;
 	font-size: 1.5vw;
 	color: #888888;
-	margin: .5vw;
+	margin: .8vw;
 }
 
 .movie-button {
